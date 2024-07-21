@@ -367,7 +367,7 @@ header nav ul li a {
     height: 400px;
     text-align: center;
     display: inline-block;
-    margin-left: 50px;
+    margin-left: 30px;
     margin-bottom: 30px;
     
 }
@@ -434,17 +434,27 @@ footer img {
 }
 
 @media screen and (max-width:600px){
+
+    .primero {
+
+        height: calc(100%);
+        padding-bottom: 20px;
+        
+    }
     .primero h1 {
         padding: 30px;
+        margin-top: 50px;
     }
+
     .clases-servicios div {
         width: 80%;
     } 
+    .segundo h2 {
+        font-size: 40px;
+        margin-bottom: 40px;
+    }
+    .recomendaciones div {
+        margin: 10px 10px;
+    }
 }
 
-@media screen and (max-width:370px){
-
-    .primero h1 {
-        margin-top: 30px; 
-        }
-    }
