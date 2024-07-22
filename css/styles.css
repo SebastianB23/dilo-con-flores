@@ -311,7 +311,8 @@ footer img {
 
 .nosotros {
     
-    height: 100%;
+    height: 100%s;
+    width: 100%;
     background-color: #e9ff99;
     background-image:
         radial-gradient(at 9% 89%, hsla(215, 90%, 73%, 1) 0px, transparent 50%),
@@ -322,14 +323,15 @@ footer img {
         radial-gradient(at 44% 9%, hsla(40, 96%, 77%, 1) 0px, transparent 50%),
         radial-gradient(at 10% 9%, hsla(76, 65%, 63%, 1) 0px, transparent 50%);
     display: flex;
-    height: 450px;
     justify-content: center;
     align-items: center;
+    padding: 10px;
 }
 
 .main {
-    display: inline-block;
-    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     padding: 20px;
 }
 
@@ -337,7 +339,6 @@ footer img {
 
     font-size: 40px;
     padding: 10px;
-    display: flex;
     align-items: center;
     justify-content: center;
     margin-bottom: 30px;
@@ -345,10 +346,11 @@ footer img {
 
 }
 
-.image {
-    display: flex;
-    width: 20%wh;
-    height: 20%wh;
+.nosotros img {
+   
+    width: 300px;
+    height: 300px;
+    margin-top: 20px;
 }
 
 
@@ -518,19 +520,21 @@ footer img {
     }
     
     .nosotros {
-        display:inline-block ;
+        display: flex ;
+        width: 100%;
         height: 100%;
         align-items: center;
         justify-content: center;
         padding: 10px;
     }
 
-    .image {
-        position: relative;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding-bottom: 10px;
+    .nosotros img {
+   
+        width: 300px;
+        height: 300px;
+        margin-top: 20px;
+        padding-left: 40px;
+    
     }
     .main {
         display: inline;
