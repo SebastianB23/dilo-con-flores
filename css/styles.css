@@ -23,8 +23,8 @@
 
 header {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    justify-content: center;
+    align-items: flex-end;
     background-color: black;
     padding: 2px;
     
@@ -64,6 +64,149 @@ header nav ul li a {
     padding: 30px;
 }
 
+.slide {
+    margin: 10px 10px;
+}
+
+
+.slide img {
+
+    height: 80vh;
+    width: 50vw;
+   
+}
+
+.primero {
+    color: white;
+    width: 100%;
+    height: calc(100vh);
+    text-align: center;
+    background-image: url(../img/background4.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    
+}
+.primero h1 {
+    width: 70%;
+    display: inline-block;
+    padding: 50px;
+    border: 3px solid wheat;
+    font-size: 40px;
+
+}
+
+.primero p {
+    padding: 50px;
+    font-size: 30px;
+}
+.primero a {
+    color: white;
+    font-style: oblique;
+    font-weight: bolder;
+    text-decoration: none;
+    background-color: darkorchid;
+    border: 1px solid black;
+    padding: 10px;
+
+}
+.recomendaciones{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.segundo {
+    display: inline-block;
+    justify-content: center;
+    background-image: url(../img/background.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.segundo h2 {
+    text-align: center;
+    font-size: 50px;
+    padding-top: 30px;
+}
+
+.segundo h3{
+    color: white;
+    margin-bottom: 20px;
+    font-size: 23px;
+
+
+}
+
+.segundo .recomendaciones div {
+    border: 1px solid gray;
+    width: 300px;
+    height: 400px;
+    text-align: center;
+    display: inline-block;
+    margin-left: 30px;
+    margin-bottom: 30px;
+    
+}
+.segundo div a{
+    text-decoration: none;
+    color: black;;
+    background-color: khaki;
+    padding: 10px;
+    
+    
+}
+
+.segundo div img {
+    display: inline-block;
+    justify-content: flex-start;
+    width: 300px;
+    height: 300px;
+}
+
+.tercero {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ .tercero iframe {
+    padding: 30px;
+    align-items: center;
+    justify-content: center;
+
+ }
+/*          FOOTER          */
+
+
+footer {
+    background-color: black;
+    height: 70px;
+    padding: 5px;
+}
+footer .contactos {
+    
+    display: flex;
+    margin: 5px;
+    text-decoration: none;
+    
+}
+footer img {
+
+    display: inline-block;
+    flex-direction:row;
+    padding: 5px;
+    height: 50px;
+    width: 50px;   
+}
+
+/*              CSS PAGINAS            */
 .productos-spag{
     display: inline-block;
     background: rgb(63,248,251);
@@ -292,139 +435,6 @@ header nav ul li a {
     rgba(34,193,195,1) 0%, 
     rgba(253,187,45,1) 100%);
   }
-
-.primero {
-
-    width: 100%;
-    height: calc(100vh);
-    text-align: center;
-    background-image: url(../img/background2.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-    
-}
-.primero h1 {
-    width: 70%;
-    display: inline-block;
-    padding: 50px;
-    border: 3px solid black;
-    font-size: 40px;
-
-}
-
-.primero p {
-    padding: 50px;
-    font-size: 30px;
-}
-.primero a {
-    color: black;
-    font-style: oblique;
-    font-weight: bolder;
-    text-decoration: none;
-    background-color: darkorchid;
-    border: 1px solid black;
-    padding: 10px;
-
-}
-.recomendaciones{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-wrap: wrap;
-}
-.segundo {
-    display: inline-block;
-    justify-content: center;
-    background-image: url(../img/background.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-.segundo h2 {
-    text-align: center;
-    font-size: 50px;
-    padding-top: 30px;
-}
-
-.segundo h3{
-    color: white;
-    margin-bottom: 20px;
-    font-size: 23px;
-
-
-}
-
-.segundo .recomendaciones div {
-    border: 1px solid gray;
-    width: 300px;
-    height: 400px;
-    text-align: center;
-    display: inline-block;
-    margin-left: 30px;
-    margin-bottom: 30px;
-    
-}
-.segundo div a{
-    text-decoration: none;
-    color: black;;
-    background-color: khaki;
-    padding: 10px;
-    
-    
-}
-
-.segundo div img {
-    display: inline-block;
-    justify-content: flex-start;
-    width: 300px;
-    height: 300px;
-}
-
-.tercero {
-    display:flex;
-    justify-content: center;
-    align-items: center;
-}
-
- .tercero iframe {
-    padding: 30px;
-    align-items: center;
-    justify-content: center;
-
- }
-
-
-/*          FOOTER          */
-
-
-footer {
-    background-color: black;
-    height: 70px;
-    padding: 5px;
-}
-footer .contactos {
-    
-    display: flex;
-    margin: 5px;
-    text-decoration: none;
-    
-}
-footer img {
-
-    display: inline-block;
-    flex-direction:row;
-    padding: 5px;
-    height: 50px;
-    width: 50px;   
-}
-
 
 @media screen and (max-width:1000px){
 
