@@ -1,0 +1,37 @@
+
+header {
+    background-color: black;
+    padding: 15px;
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1;
+
+    h1 {
+        font-family: "Playwrite BE VLG", cursive;
+        color: white;
+        font-size: 30px;
+        font-weight: 700;
+    }
+    nav {
+        ul {
+            list-style: none;
+            display: flex;
+            
+            li{
+                margin: 10px;
+                    a {
+                        text-decoration: none;
+                        color: white;
+                        font-size: 20px;
+                        transition: 0.5s;
+                        &:hover{
+                        color: rgb(37, 172, 205)
+                        }
+                    }
+                }
+            }
+        }
+    }

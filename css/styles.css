@@ -1,11 +1,7 @@
 
-
-/*          FUENTES          */
-
 @import url('https://fonts.googleapis.com/css2?family=Playwrite+SK:wght@100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
-
-/*          RESET          */
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+BE+VLG:wght@100..400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playwrite+AR:wght@100..400&display=swap');
 
 *{
     margin: 0;
@@ -14,191 +10,67 @@
 
 }
 
- body {
-    font-family: 'Poppins', cursive;
-    
- }
+html {
+    line-height: 1.15; 
+    font-size: 62.5%;
+    -webkit-text-size-adjust: 100%; 
+  }
 
-/*          HEADER          */
+  body {
+    margin: 0;
+    font-size: 16px;
+  }
+
 
 header {
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
     background-color: black;
-    padding: 2px;
-    
-}
-
-
-header img {
-    
-    width: 80px;
-    height: 80px;
- 
+    padding: 15px;
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1;
 }
 
 header h1 {
-color: white;
+    font-family: "Playwrite BE VLG", cursive;
+    color: white;
+    font-size: 30px;
+    font-weight: 700;
 }
 
-header nav ul li{
-    display: inline-block;
+header nav ul {
     list-style: none;
+    display: flex;
+}
+header nav ul li {
     margin: 10px;
-
 }
 
-header nav ul li a {
+header nav ul a {
     text-decoration: none;
     color: white;
     font-size: 20px;
-    
-
+    transition: 0.5s;
 }
-
-/*          MAIN          */
-
-.main{
-    width: auto;
-    padding: 30px;
+header nav ul a:hover{
+    color: rgb(37, 172, 205)
 }
-
-.slide {
-    margin: 10px 10px;
-}
-
-
-.slide img {
-
-    height: 80vh;
-    width: 50vw;
-   
-}
-
-.primero {
-    color: white;
-    width: 100%;
-    height: calc(100vh);
-    text-align: center;
-    background-image: url(../img/background4.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-    
-}
-.primero h1 {
-    width: 70%;
-    display: inline-block;
-    padding: 50px;
-    border: 3px solid wheat;
-    font-size: 40px;
-
-}
-
-.primero p {
-    padding: 50px;
-    font-size: 30px;
-}
-.primero a {
-    color: white;
-    font-style: oblique;
-    font-weight: bolder;
-    text-decoration: none;
-    background-color: darkorchid;
-    border: 1px solid black;
-    padding: 10px;
-
-}
-.recomendaciones{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-wrap: wrap;
-}
-.segundo {
-    display: inline-block;
-    justify-content: center;
-    background-image: url(../img/background.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-.segundo h2 {
-    text-align: center;
-    font-size: 50px;
-    padding-top: 30px;
-}
-
-.segundo h3{
-    color: white;
-    margin-bottom: 20px;
-    font-size: 23px;
-
-
-}
-
-.segundo .recomendaciones div {
-    border: 1px solid gray;
-    width: 300px;
-    height: 400px;
-    text-align: center;
-    display: inline-block;
-    margin-left: 30px;
-    margin-bottom: 30px;
-    
-}
-.segundo div a{
-    text-decoration: none;
-    color: black;;
-    background-color: khaki;
-    padding: 10px;
-    
-    
-}
-
-.segundo div img {
-    display: inline-block;
-    justify-content: flex-start;
-    width: 300px;
-    height: 300px;
-}
-
-.tercero {
-    display:flex;
-    justify-content: center;
-    align-items: center;
-}
-
- .tercero iframe {
-    padding: 30px;
-    align-items: center;
-    justify-content: center;
-
- }
-/*          FOOTER          */
-
 
 footer {
     background-color: black;
     height: 70px;
     padding: 5px;
 }
-footer .contactos {
+.contactos {
     
     display: flex;
     margin: 5px;
     text-decoration: none;
     
 }
-footer img {
-
+.contactos img {
     display: inline-block;
     flex-direction:row;
     padding: 5px;

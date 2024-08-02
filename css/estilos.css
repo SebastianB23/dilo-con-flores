@@ -1,0 +1,223 @@
+/*          FUENTES          */
+@import url("https://fonts.googleapis.com/css2?family=Playwrite+SK:wght@100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playwrite+BE+VLG:wght@100..400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playwrite+AR:wght@100..400&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  border: 0; }
+
+html {
+  line-height: 1.15;
+  font-size: 62.5%;
+  -webkit-text-size-adjust: 100%; }
+
+body {
+  margin: 0;
+  font-size: 16px; }
+
+header {
+  background-color: black;
+  padding: 15px;
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1; }
+  header h1 {
+    font-family: "Playwrite BE VLG", cursive;
+    color: white;
+    font-size: 30px;
+    font-weight: 700; }
+  header nav ul {
+    list-style: none;
+    display: flex; }
+    header nav ul li {
+      margin: 10px; }
+      header nav ul li a {
+        text-decoration: none;
+        color: white;
+        font-size: 20px;
+        transition: 0.5s; }
+        header nav ul li a:hover {
+          color: #25accd; }
+
+.main {
+  width: auto;
+  padding: 30px; }
+
+.slide img {
+  height: 80vh;
+  width: 50vw; }
+
+.primero {
+  color: white;
+  width: 100%;
+  height: calc(100vh);
+  text-align: center;
+  background-image: url(../img/background4.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  .primero h1 {
+    width: 70%;
+    display: inline-block;
+    padding: 50px;
+    border: 3px solid wheat;
+    font-size: 40px; }
+  .primero p {
+    padding: 50px;
+    font-size: 30px; }
+  .primero a {
+    color: white;
+    font-style: oblique;
+    font-weight: bolder;
+    text-decoration: none;
+    background-color: darkorchid;
+    border: 1px solid black;
+    padding: 10px; }
+
+.segundo {
+  display: block;
+  background-image: url(../img/background.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 10px; }
+  .segundo h2 {
+    text-align: center;
+    font-size: 50px;
+    padding-top: 30px;
+    margin-bottom: 30px; }
+  .segundo h3 {
+    color: white;
+    margin-bottom: 20px;
+    font-size: 23px; }
+
+.recomendaciones {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap; }
+
+.segundo .recomendaciones div {
+  border: 1px solid gray;
+  width: 300px;
+  height: 400px;
+  text-align: center;
+  display: inline-block;
+  margin-left: 30px;
+  margin-bottom: 30px; }
+  .segundo .recomendaciones div a {
+    text-decoration: none;
+    color: black;
+    background-color: khaki;
+    padding: 10px; }
+  .segundo .recomendaciones div img {
+    display: inline-block;
+    justify-content: flex-start;
+    width: 300px;
+    height: 300px; }
+
+.tercero {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.tercero iframe {
+  padding: 30px;
+  align-items: center;
+  justify-content: center; }
+
+footer {
+  background-color: black;
+  height: 70px;
+  padding: 5px; }
+  footer div {
+    display: flex;
+    margin: 5px;
+    text-decoration: none; }
+    footer div a img {
+      display: inline-block;
+      flex-direction: row;
+      padding: 5px;
+      height: 50px;
+      width: 50px; }
+
+@media screen and (max-width: 1000px) {
+  .clases-servicios div {
+    width: 80%; }
+  .productos-spag h2 {
+    font-size: 40px;
+    padding-left: 60px; }
+  .nosotros {
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    align-items: center; } }
+
+@media screen and (max-width: 650px) {
+  header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    padding: 2px; }
+  .nav-bar {
+    width: 100%; }
+  .primero {
+    color: white;
+    height: calc(100%);
+    padding-bottom: 20px;
+    background-image: url(../img/background4.jpg); }
+  .primero h1 {
+    padding: 30px;
+    margin-top: 50px;
+    border-color: wheat; }
+  .servicios {
+    padding-right: 30px; }
+  .clases-servicios div {
+    width: 80%; }
+  .segundo h2 {
+    font-size: 40px;
+    margin-bottom: 40px; }
+  .recomendaciones div {
+    margin: 10px 10px; }
+  .productos-spag h2 {
+    font-size: 40px;
+    padding-left: 60px; }
+  .form-register h4 {
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+  .form-register p {
+    margin-bottom: 30px; }
+  .nosotros {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    padding: 10px; }
+  .nosotros img {
+    width: 300px;
+    height: 300px;
+    margin-top: 20px;
+    padding-left: 40px; }
+  .main {
+    display: inline;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px; }
+  .nosotros h2 {
+    justify-content: center;
+    padding: 20px; }
+  .nosotros p {
+    margin: 20px 10px; } }
