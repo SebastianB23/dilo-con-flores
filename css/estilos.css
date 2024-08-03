@@ -16,6 +16,11 @@ body {
   margin: 0;
   font-size: 16px; }
 
+.primero, .tercero {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
 header {
   background-color: black;
   padding: 15px;
@@ -61,15 +66,12 @@ header {
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center; }
+  flex-direction: column; }
   .primero h1 {
     width: 70%;
     display: inline-block;
     padding: 50px;
-    border: 3px solid wheat;
+    border: 3px solid khaki;
     font-size: 40px; }
   .primero p {
     padding: 50px;
@@ -125,11 +127,6 @@ header {
     width: 300px;
     height: 300px; }
 
-.tercero {
-  display: flex;
-  justify-content: center;
-  align-items: center; }
-
 .tercero iframe {
   padding: 30px;
   align-items: center;
@@ -157,19 +154,19 @@ footer {
     font-size: 40px;
     padding-left: 60px; }
   .nosotros {
-    display: flex;
     height: 100%;
+    display: flex;
     justify-content: center;
     align-items: center; } }
 
 @media screen and (max-width: 650px) {
   header {
     width: 100%;
+    background-color: black;
+    padding: 2px;
     display: flex;
     justify-content: center;
-    align-items: center;
-    background-color: black;
-    padding: 2px; }
+    align-items: center; }
   .nav-bar {
     width: 100%; }
   .primero {
@@ -195,17 +192,17 @@ footer {
     padding-left: 60px; }
   .form-register h4 {
     display: flex;
-    align-items: center;
-    justify-content: center; }
+    justify-content: center;
+    align-items: center; }
   .form-register p {
     margin-bottom: 30px; }
   .nosotros {
-    display: flex;
     width: 100%;
     height: 100%;
-    align-items: center;
+    padding: 10px;
+    display: flex;
     justify-content: center;
-    padding: 10px; }
+    align-items: center; }
   .nosotros img {
     width: 300px;
     height: 300px;

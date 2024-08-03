@@ -22,3 +22,20 @@ html {
     margin: 0;
     font-size: 16px;
   }
+
+
+  // VARIABLES
+
+$color-principal: black;
+$color-secundario: white;
+$color-terciario: khaki;
+
+
+// EXTENDS
+
+%flex{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+

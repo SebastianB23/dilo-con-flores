@@ -1,6 +1,6 @@
 
 header {
-    background-color: black;
+    background-color: $color-principal;
     padding: 15px;
     position: sticky;
     top: 0;
@@ -11,7 +11,7 @@ header {
 
     h1 {
         font-family: "Playwrite BE VLG", cursive;
-        color: white;
+        color: $color-secundario;
         font-size: 30px;
         font-weight: 700;
     }
@@ -24,7 +24,7 @@ header {
                 margin: 10px;
                     a {
                         text-decoration: none;
-                        color: white;
+                        color: $color-secundario;
                         font-size: 20px;
                         transition: 0.5s;
                         &:hover{

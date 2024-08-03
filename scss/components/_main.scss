@@ -14,7 +14,7 @@
 }
 
 .primero{
-    color: white;
+    color: $color-secundario;
     width: 100%;
     height: calc(100vh);
     text-align: center;
@@ -23,16 +23,14 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    @extend %flex;
    
     h1{
     width: 70%;
     display: inline-block;
     padding: 50px;
-    border: 3px solid wheat;
+    border: 3px solid $color-terciario;
     font-size: 40px;
     }
 
@@ -42,12 +40,12 @@
     }
 
     a{
-    color: white;
+    color: $color-secundario;
     font-style: oblique;
     font-weight: bolder;
     text-decoration: none;
     background-color: darkorchid;
-    border: 1px solid black;
+    border: 1px solid $color-principal;
     padding: 10px;
     }
 }
@@ -70,7 +68,7 @@
     }
 
     h3{
-    color: white;
+    color: $color-secundario;
     margin-bottom: 20px;
     font-size: 23px;
     }
@@ -95,8 +93,8 @@
         margin-bottom: 30px;
         a{
             text-decoration: none;
-            color: black;;
-            background-color: khaki;
+            color: $color-principal;
+            background-color: $color-terciario;
             padding: 10px; 
         }
         img {
@@ -109,9 +107,7 @@
         }
 }
 .tercero {
-    display:flex;
-    justify-content: center;
-    align-items: center;
+    @extend %flex;
 }
 
 .tercero iframe {
