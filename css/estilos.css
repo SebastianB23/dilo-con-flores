@@ -5,16 +5,12 @@
 * {
   margin: 0;
   padding: 0;
-  border: 0; }
-
-html {
-  line-height: 1.15;
-  font-size: 62.5%;
-  -webkit-text-size-adjust: 100%; }
+  border: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif; }
 
 body {
-  margin: 0;
-  font-family: 'Open Sans', sans-serif; }
+  min-height: 100vh; }
 
 .primero, .tercero {
   display: flex;
@@ -22,35 +18,66 @@ body {
   align-items: center; }
 
 header {
-  background-color: black;
-  padding: 10px;
-  position: sticky;
+  position: fixed;
   top: 0;
+  left: 0;
+  width: 100%;
+  padding: 1.3rem 10%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  z-index: 5; }
-  header h1 {
-    font-family: "Playwrite BE VLG", cursive;
-    color: white;
-    font-size: 30px;
-    font-weight: 700; }
-  header nav ul {
-    list-style: none;
-    display: flex; }
-    header nav ul li {
-      margin: 10px; }
-      header nav ul li a {
-        text-decoration: none;
-        color: white;
-        font-size: 20px;
-        transition: 0.5s; }
-        header nav ul li a:hover {
-          color: #25accd; }
+  z-index: 100; }
+  header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(30px);
+    z-index: -1; }
+  header::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.4), transparent);
+    transition: .5s; }
+  header:hover::after {
+    left: 100%; }
 
-.main {
-  width: auto;
-  padding: 30px; }
+.logo {
+  font-size: 2rem;
+  color: white;
+  text-decoration: none;
+  font-weight: 700; }
+
+.navbar a {
+  font-size: 1.15rem;
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  margin-left: 2.5rem;
+  transition: 0.5s; }
+  .navbar a .navbar a:hover {
+    color: #25accd; }
+
+#check {
+  display: none; }
+
+.icons {
+  position: absolute;
+  right: 5%;
+  font-size: 2.8rem;
+  color: white;
+  cursor: pointer;
+  display: none; }
+
+.slide div {
+  margin-top: 0; }
 
 .slide img {
   height: 80dvh;
@@ -133,6 +160,7 @@ header {
   justify-content: center; }
 
 .productos-spag {
+  padding-top: 100px;
   display: inline-block;
   background: #3ff8fb;
   background: linear-gradient(90deg, #3ff8fb 0%, #4e56ac 34%, #4c0ec7 52%, #cf4c8d 83%, #fc466b 100%, #187d7e 100%, #fc466b 120%, #fc466b 120%); }
@@ -171,6 +199,7 @@ header {
     font-size: 23px; }
 
 .servicios {
+  padding-top: 100px;
   height: 100%;
   background-image: url(../img/background3.jpg);
   height: auto;
@@ -210,6 +239,7 @@ header {
   margin-top: 30px; }
 
 .main_nosotros {
+  margin-top: 100px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -229,6 +259,7 @@ header {
     font-size: 15px; }
 
 .form-register {
+  padding: 100px 0 0 0;
   background-image: url(../img/background3.jpg);
   display: flex;
   align-items: center;
@@ -240,7 +271,8 @@ header {
     height: 40px;
     text-align: center;
     font-size: 18px;
-    line-height: 40px; }
+    line-height: 40px;
+    margin-bottom: 30px; }
   .form-register a {
     color: white;
     text-decoration: none; }
@@ -322,16 +354,47 @@ footer {
     justify-content: center;
     align-items: center; } }
 
-@media screen and (max-width: 650px) {
-  header {
+@media (max-width: 1100px) {
+  .icons {
+    display: inline-flex; }
+  #check:checked ~ .icons #menu-icon {
+    display: none; }
+  .icons #close-icon {
+    display: none; }
+  #check:checked ~ .icons #close-icon {
+    display: block; }
+  .navbar {
+    position: absolute;
+    display: block;
+    top: 100%;
+    left: 0;
     width: 100%;
-    background-color: black;
-    padding: 2px;
-    display: flex;
-    justify-content: center;
-    align-items: center; }
-  .nav-bar {
-    width: 100%; }
+    height: 0;
+    background-color: rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(30px);
+    overflow: hidden;
+    transition: .3s ease;
+    padding: 0; }
+    .navbar a {
+      display: block;
+      font-size: 1.1rem;
+      margin: 1.5rem 0;
+      text-align: center;
+      transform: translateY(-50px);
+      opacity: 0;
+      transition: .3s ease; }
+  #check:checked ~ .navbar {
+    height: 17.7rem; }
+  #check:checked ~ .navbar a {
+    transform: translateY(0);
+    opacity: 1;
+    transition-delay: calc(.15s * var(--i)); } }
+
+@media (max-width: 992px) {
+  .header {
+    padding: 1.3rem 5%; } }
+
+@media (max-width: 650px) {
   .primero {
     color: white;
     height: calc(100%);

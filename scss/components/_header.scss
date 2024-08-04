@@ -1,38 +1,77 @@
 
 header {
-    background-color: $color-principal;
-    padding: 10px;
-    position: sticky;
+    
+    position: fixed;
     top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1.3rem 10%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    z-index: 5;
+    z-index: 100;
+    &::before{
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(30px);
+        z-index: -1;
+    }
+    &::after{
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(90deg, transparent, rgba(255, 255, 255, .4), transparent);
+        transition: .5s;
+    }
+    &:hover::after{
+        left: 100%;
+    }
+        
+    
 
-    h1 {
-        font-family: "Playwrite BE VLG", cursive;
+}
+    .logo{
+        font-size: 2rem;
         color: $color-secundario;
-        font-size: 30px;
+        text-decoration: none;
         font-weight: 700;
     }
-    nav {
+    .navbar {
         
-        ul {
-            list-style: none;
-            display: flex;
-            
-            li{
-                margin: 10px;
-                    a {
-                        text-decoration: none;
-                        color: $color-secundario;
-                        font-size: 20px;
-                        transition: 0.5s;
-                        &:hover{
-                        color: rgb(37, 172, 205)
-                        }
-                    }
-                }
+        a {
+            font-size: 1.15rem;
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            margin-left: 2.5rem;
+            transition: 0.5s; 
+            .navbar a:hover {
+                color: #25accd
             }
         }
     }
+    
+ #check{
+    display: none;
+ }
+        
+   
+.icons {  
+    position: absolute;
+    right: 5%;
+    font-size: 2.8rem;
+    color: $color-secundario;
+    cursor: pointer;
+    display: none;
+}
+
+
+
