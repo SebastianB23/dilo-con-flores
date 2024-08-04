@@ -1,0 +1,34 @@
+
+
+.servicios{
+
+    height: 100%;
+    background-image: url(../img/background3.jpg);
+    height: auto;
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.clases-servicios{
+
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+
+    h2{
+        font-size: 30px;
+        color: antiquewhite;
+    }
+
+    div{
+        border: 1px solid white;
+        padding: 20px;
+        width: 90%;
+        height: 80hw;
+        text-align: center;
+        display: inline-block;
+        margin: 30px 30px;
+    }
+}

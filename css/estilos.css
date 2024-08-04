@@ -14,7 +14,7 @@ html {
 
 body {
   margin: 0;
-  font-size: 16px; }
+  font-family: 'Open Sans', sans-serif; }
 
 .primero, .tercero {
   display: flex;
@@ -23,13 +23,13 @@ body {
 
 header {
   background-color: black;
-  padding: 15px;
+  padding: 10px;
   position: sticky;
   top: 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  z-index: 1; }
+  z-index: 5; }
   header h1 {
     font-family: "Playwrite BE VLG", cursive;
     color: white;
@@ -53,8 +53,8 @@ header {
   padding: 30px; }
 
 .slide img {
-  height: 80vh;
-  width: 50vw; }
+  height: 80dvh;
+  width: 50dvw; }
 
 .primero {
   color: white;
@@ -131,6 +131,169 @@ header {
   padding: 30px;
   align-items: center;
   justify-content: center; }
+
+.productos-spag {
+  display: inline-block;
+  background: #3ff8fb;
+  background: linear-gradient(90deg, #3ff8fb 0%, #4e56ac 34%, #4c0ec7 52%, #cf4c8d 83%, #fc466b 100%, #187d7e 100%, #fc466b 120%, #fc466b 120%); }
+  .productos-spag h2 {
+    color: antiquewhite;
+    font-size: 50px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 30px; }
+
+.recomendaciones-productos {
+  display: flex;
+  flex-wrap: wrap; }
+  .recomendaciones-productos div {
+    border: 1px solid white;
+    padding: 20px;
+    width: 80wv;
+    height: 80hw;
+    text-align: center;
+    display: inline-block;
+    margin: 50px 50px; }
+    .recomendaciones-productos div img {
+      display: inline-block;
+      justify-content: flex-start;
+      width: 300px;
+      height: 300px; }
+  .recomendaciones-productos h3 {
+    color: white;
+    margin: 20px 20px;
+    font-size: 40px; }
+  .recomendaciones-productos h4 {
+    color: khaki;
+    margin-bottom: 20px;
+    font-size: 23px; }
+
+.servicios {
+  height: 100%;
+  background-image: url(../img/background3.jpg);
+  height: auto;
+  display: inline-block;
+  justify-content: center;
+  align-items: center; }
+
+.clases-servicios {
+  display: inline-block;
+  align-items: center;
+  justify-content: center; }
+  .clases-servicios h2 {
+    font-size: 30px;
+    color: antiquewhite; }
+  .clases-servicios div {
+    border: 1px solid white;
+    padding: 20px;
+    width: 90%;
+    height: 80hw;
+    text-align: center;
+    display: inline-block;
+    margin: 30px 30px; }
+
+.nosotros {
+  height: 100%s;
+  width: 100%;
+  background-color: #e9ff99;
+  background-image: radial-gradient(at 9% 89%, #7cb0f8 0px, transparent 50%), radial-gradient(at 72% 6%, #e75fa1 0px, transparent 50%), radial-gradient(at 24% 19%, #f89d81 0px, transparent 50%), radial-gradient(at 65% 6%, #f29b91 0px, transparent 50%), radial-gradient(at 20% 98%, #e561c2 0px, transparent 50%), radial-gradient(at 44% 9%, #fdd78c 0px, transparent 50%), radial-gradient(at 10% 9%, #bdde63 0px, transparent 50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px; }
+
+.nosotros img {
+  width: 300px;
+  height: 300px;
+  margin-top: 30px; }
+
+.main_nosotros {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px; }
+  .main_nosotros h2 {
+    font-size: 40px;
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px; }
+  .main_nosotros p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 200px;
+    padding-right: 200px;
+    font-size: 15px; }
+
+.form-register {
+  background-image: url(../img/background3.jpg);
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  .form-register h4 {
+    font-size: 22px;
+    margin-bottom: 20px; }
+  .form-register p {
+    height: 40px;
+    text-align: center;
+    font-size: 18px;
+    line-height: 40px; }
+  .form-register a {
+    color: white;
+    text-decoration: none; }
+    .form-register a:hover {
+      color: white;
+      text-decoration: underline; }
+
+.formulario {
+  justify-content: center;
+  align-items: center;
+  width: 400px;
+  background: #24303c;
+  padding: 30px;
+  margin: 50px 50px;
+  border-radius: 4px;
+  font-family: 'calibri';
+  color: white;
+  box-shadow: 7px 13px 37px #000; }
+  .formulario h4 {
+    font-size: 22px;
+    margin-bottom: 20px; }
+  .formulario p {
+    height: 40px;
+    text-align: center;
+    font-size: 18px;
+    line-height: 40px; }
+
+.controls {
+  width: 100%;
+  background: #24303c;
+  padding: 10px;
+  border-radius: 4px;
+  margin-bottom: 16px;
+  border: 1px solid #1f53c5;
+  font-family: 'calibri';
+  font-size: 18px;
+  color: white; }
+
+.form-register .botons {
+  width: 100%;
+  background: #020024;
+  background: linear-gradient(90deg, #020024 0%, #090979 42%, #00d4ff 100%);
+  border: none;
+  padding: 12px;
+  color: #f5f5f5;
+  font-weight: bolder;
+  margin: 16px 0;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease; }
+  .form-register .botons:hover {
+    background: #22c1c3;
+    background: linear-gradient(0deg, #22c1c3 0%, #fdbb2d 100%); }
 
 footer {
   background-color: black;

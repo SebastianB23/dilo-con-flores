@@ -1,13 +1,13 @@
 
 header {
     background-color: $color-principal;
-    padding: 15px;
+    padding: 10px;
     position: sticky;
     top: 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    z-index: 1;
+    z-index: 5;
 
     h1 {
         font-family: "Playwrite BE VLG", cursive;
@@ -16,6 +16,7 @@ header {
         font-weight: 700;
     }
     nav {
+        
         ul {
             list-style: none;
             display: flex;
