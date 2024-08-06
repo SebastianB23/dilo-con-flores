@@ -159,45 +159,6 @@ header {
   align-items: center;
   justify-content: center; }
 
-.productos-spag {
-  padding-top: 100px;
-  display: inline-block;
-  background: #3ff8fb;
-  background: linear-gradient(90deg, #3ff8fb 0%, #4e56ac 34%, #4c0ec7 52%, #cf4c8d 83%, #fc466b 100%, #187d7e 100%, #fc466b 120%, #fc466b 120%); }
-  .productos-spag h2 {
-    color: antiquewhite;
-    font-size: 50px;
-    font-weight: 700;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding-top: 30px; }
-
-.recomendaciones-productos {
-  display: flex;
-  flex-wrap: wrap; }
-  .recomendaciones-productos div {
-    border: 1px solid white;
-    padding: 20px;
-    width: 80wv;
-    height: 80hw;
-    text-align: center;
-    display: inline-block;
-    margin: 50px 50px; }
-    .recomendaciones-productos div img {
-      display: inline-block;
-      justify-content: flex-start;
-      width: 300px;
-      height: 300px; }
-  .recomendaciones-productos h3 {
-    color: white;
-    margin: 20px 20px;
-    font-size: 40px; }
-  .recomendaciones-productos h4 {
-    color: khaki;
-    margin-bottom: 20px;
-    font-size: 23px; }
-
 .servicios {
   padding-top: 100px;
   height: 100%;
@@ -341,6 +302,11 @@ footer {
       padding: 5px;
       height: 50px;
       width: 50px; }
+      footer div a img p {
+        color: white;
+        display: flex;
+        justify-content: space-between;
+        align-content: center; }
 
 @media screen and (max-width: 1000px) {
   .clases-servicios div {

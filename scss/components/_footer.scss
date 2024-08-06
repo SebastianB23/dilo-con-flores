@@ -17,6 +17,12 @@ footer {
                 padding: 5px;
                 height: 50px;
                 width: 50px;   
+                p {
+                    color: white;
+                    display: flex;
+                    justify-content: space-between;
+                    align-content: center;
+                }
             }
         }
     }
