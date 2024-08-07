@@ -1,28 +1,22 @@
 
-
 .slide {
     
-    div{
-        margin-top: 0;
-    }
-        img{
-            height: 80dvh;
-            width: 50dvw;
+        div{
+            padding: 20px;
+
         }
+            img{
+                height: 80dvh;
+                width: 50dvw;
+            }
 }
 
 .primero{
     color: $color-secundario;
     width: 100%;
-    height: calc(100vh);
-    text-align: center;
-    background-image: url(../img/background4.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
+    height: calc(100dvh);
     flex-direction: column;
-    @extend %flex;
+    @include flexible(flex, center, center);
    
     h1{
     width: 70%;
@@ -60,7 +54,8 @@
 
     h2{
     text-align: center;
-    font-size: 50px;
+    font-size: 70px;
+    font-weight: 800;
     padding-top: 30px;
     margin-bottom: 30px;
     }
@@ -104,13 +99,3 @@
             }
         }
 }
-.tercero {
-    @extend %flex;
-}
-
-.tercero iframe {
-    padding: 30px;
-    align-items: center;
-    justify-content: center;
-
- }

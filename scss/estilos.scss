@@ -1,5 +1,7 @@
 
 @import "./base/general";
+@import "./base/mixins";
+@import "./base/variables";
 @import "./components/header";
 @import "./components/main";
 @import "./views/productos";
@@ -7,6 +9,4 @@
 @import "./views/nosotros";
 @import "./views/contactenos";
 @import "./components/footer";
-
-
 @import "./base/media";

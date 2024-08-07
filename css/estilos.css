@@ -4,21 +4,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playwrite+AR:wght@100..400&display=swap");
 * {
   margin: 0;
-  padding: 0;
   border: 0;
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif; }
 
-body {
-  min-height: 100vh; }
-
-.primero, .tercero {
-  display: flex;
-  justify-content: center;
-  align-items: center; }
-
 header {
   position: fixed;
+  background-color: #00DBDE;
+  background-image: linear-gradient(135deg, #00DBDE 0%, #FC00FF 100%);
   top: 0;
   left: 0;
   width: 100%;
@@ -77,7 +70,7 @@ header {
   display: none; }
 
 .slide div {
-  margin-top: 0; }
+  padding: 20px; }
 
 .slide img {
   height: 80dvh;
@@ -86,14 +79,11 @@ header {
 .primero {
   color: white;
   width: 100%;
-  height: calc(100vh);
-  text-align: center;
-  background-image: url(../img/background4.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-  flex-direction: column; }
+  height: calc(100dvh);
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
   .primero h1 {
     width: 70%;
     display: inline-block;
@@ -121,7 +111,8 @@ header {
   padding: 10px; }
   .segundo h2 {
     text-align: center;
-    font-size: 50px;
+    font-size: 70px;
+    font-weight: 800;
     padding-top: 30px;
     margin-bottom: 30px; }
   .segundo h3 {
@@ -154,10 +145,54 @@ header {
     width: 300px;
     height: 300px; }
 
-.tercero iframe {
-  padding: 30px;
-  align-items: center;
-  justify-content: center; }
+.products {
+  background-color: #4158D0;
+  background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%); }
+  .products h1 {
+    padding-top: 125px;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+  .products h2 {
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+
+.gallery-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: 250px;
+  padding: 20px;
+  grid-gap: 10px; }
+
+.gallery_item {
+  position: relative; }
+
+.gallery_title {
+  position: absolute;
+  bottom: 0;
+  color: white;
+  background: linear-gradient(rgba(225, 225, 225, 0.1), black);
+  width: 100%;
+  margin: 0;
+  padding: 10px;
+  border-radius: 15px; }
+
+.gallery_img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 15px; }
+  .gallery_img:hover {
+    background: rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(30px); }
+
+.gallery_item:nth-child(6) {
+  grid-row-start: span 2; }
+
+.gallery_item:nth-child(7) {
+  grid-row-start: span 2; }
 
 .servicios {
   padding-top: 100px;
@@ -219,9 +254,15 @@ header {
     padding-right: 20px;
     font-size: 20px; }
 
+.contactenos {
+  background-color: #4158D0;
+  background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
 .form-register {
   padding: 100px 0 0 0;
-  background-image: url(../img/background3.jpg);
   display: flex;
   align-items: center;
   justify-content: center; }
@@ -288,8 +329,20 @@ header {
     background: #22c1c3;
     background: linear-gradient(0deg, #22c1c3 0%, #fdbb2d 100%); }
 
+.tercero {
+  padding-top: 105px;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.tercero iframe {
+  padding: 30px;
+  align-items: center;
+  justify-content: center; }
+
 footer {
-  background-color: black;
+  background-color: #00DBDE;
+  background-image: linear-gradient(135deg, #00DBDE 0%, #FC00FF 100%);
   height: 70px;
   padding: 5px; }
   footer div {
@@ -302,23 +355,6 @@ footer {
       padding: 5px;
       height: 50px;
       width: 50px; }
-      footer div a img p {
-        color: white;
-        display: flex;
-        justify-content: space-between;
-        align-content: center; }
-
-@media screen and (max-width: 1000px) {
-  .clases-servicios div {
-    width: 80%; }
-  .productos-spag h2 {
-    font-size: 40px;
-    padding-left: 60px; }
-  .nosotros {
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center; } }
 
 @media (max-width: 1100px) {
   .icons {
@@ -354,11 +390,27 @@ footer {
   #check:checked ~ .navbar a {
     transform: translateY(0);
     opacity: 1;
-    transition-delay: calc(.15s * var(--i)); } }
+    transition-delay: calc(.15s * var(--i)); }
+  .clases-servicios div {
+    width: 80%; }
+  .nosotros {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center; } }
 
 @media (max-width: 992px) {
-  .header {
-    padding: 1.3rem 5%; } }
+  .gallery-container {
+    grid-template-columns: repeat(2, 1fr); }
+  .contactenos {
+    display: block;
+    padding: 0 10px; }
+  .tercero {
+    padding-top: 10px; }
+  footer {
+    align-content: center;
+    display: flex;
+    justify-content: center; } }
 
 @media (max-width: 650px) {
   .primero {
@@ -382,6 +434,14 @@ footer {
   .productos-spag h2 {
     font-size: 40px;
     padding-left: 60px; }
+  .products h2 {
+    font-size: 15px; }
+  .gallery-container {
+    grid-template-columns: repeat(1, 1fr); }
+  .gallery_item:nth-child(6) {
+    grid-row-start: span 1; }
+  .gallery_item:nth-child(7) {
+    grid-row-start: span 1; }
   .nosotros {
     width: 100%;
     height: 100%;

@@ -1,0 +1,13 @@
+
+ 
+@mixin flexible ($dis, $just, $aling){
+    display: $dis;
+    justify-content: $just;
+    align-items: $aling;
+}
+
+@mixin grid ($columnas, $espacio){
+    display: grid;
+    grid-template-columns: repeat($columnas, 1fr );
+    gap: $espacio;
+}

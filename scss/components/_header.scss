@@ -1,7 +1,8 @@
-
 header {
-    
+
     position: fixed;
+    background-color: #00DBDE;
+    background-image: linear-gradient(135deg, #00DBDE 0%, #FC00FF 100%);
     top: 0;
     left: 0;
     width: 100%;
@@ -45,7 +46,6 @@ header {
         font-weight: 700;
     }
     .navbar {
-        
         a {
             font-size: 1.15rem;
             color: white;
@@ -72,6 +72,3 @@ header {
     cursor: pointer;
     display: none;
 }
-
-
-
