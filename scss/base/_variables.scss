@@ -5,3 +5,19 @@
   $color-principal: black;
   $color-secundario: white;
   $color-terciario: khaki;
+
+
+  $thick : 3px;
+  $pad : 0.7em;
+  $extra : calc(#{$pad} * 1.2);
+  $color : #f26522;
+
+  //EXTENDS
+
+  
+    %flex{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
