@@ -604,9 +604,11 @@ footer {
     margin-bottom: 30px; } }
 
 @media only screen and (min-width: 360px) and (max-width: 595px) {
-  .main_index .whatsapp {
-    right: 20px;
-    bottom: 100px; }
+  .main_index {
+    padding-top: 30px; }
+    .main_index .whatsapp {
+      right: 20px;
+      bottom: 100px; }
   .banner {
     height: 100%; }
     .banner h1 {
