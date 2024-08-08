@@ -605,7 +605,7 @@ footer {
 
 @media only screen and (min-width: 360px) and (max-width: 595px) {
   .main_index {
-    padding-top: 30px; }
+    padding-top: 50px; }
     .main_index .whatsapp {
       right: 20px;
       bottom: 100px; }
