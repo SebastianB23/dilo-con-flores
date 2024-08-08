@@ -1,7 +1,5 @@
 header {
 
-
-
     position: fixed;
     background-color: #00DBDE;
     background-image: linear-gradient(135deg, #00DBDE 0%, #FC00FF 100%);
@@ -56,12 +54,11 @@ header {
             transition: 0.5s;
         }
     }
+    
     .navbar a:nth-child(1){
         margin-left: 0;
     }
-    .navbar a:nth-child(2){
-        margin-left: 55px;
-    }
+   
    
     
  #check{
