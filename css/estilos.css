@@ -70,7 +70,8 @@ header {
   display: none; }
 
 .main_index {
-  width: 100%; }
+  width: 100%;
+  background-color: #f2f2f2; }
   .main_index .whatsapp {
     position: fixed;
     right: 60px;
