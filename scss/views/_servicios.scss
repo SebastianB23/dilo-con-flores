@@ -17,9 +17,6 @@
     width: 250px;
     height: 400px;
     margin: 20px;
-}
-
-.card {
 
     .face {
     position: absolute;
@@ -28,7 +25,7 @@
     backface-visibility: hidden;
     border-radius: 10px;
     overflow: hidden;
-    transition: 1s;
+    transition: 1.5s;
     }
 
     .front {
