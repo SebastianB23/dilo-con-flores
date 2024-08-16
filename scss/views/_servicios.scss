@@ -2,87 +2,98 @@
 
 .servicios{
     padding-top: 100px;
-    height: 100%;
-    background-color: rosybrown;
-    height: auto;
-    display: inline-block;
-    justify-content: center;
-    align-items: center;
-    
-}
-
-.clases-servicios{
-
-    display: inline-block;
-    align-items: center;
-    justify-content: center;
-
-    h2{
-        font-size: 30px;
-        color: antiquewhite;
-    }
-
-    div{
-        border: 1px solid white;
-        padding: 20px;
-        width: 90%;
-        height: 80hw;
-        text-align: center;
-        display: inline-block;
-        margin: 30px 30px;
-    }
-}
-/* Galeria */
-
-
-.portafolio{
-    background: #f2f2f2;
-}
-
-.galeria-port{
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-}
-
-.imagen-port{
-    width: 24%;
-    margin-bottom: 10px;
-    overflow: hidden;
-    position: relative;
-    cursor: pointer;
-    box-shadow: 0 0 6px 0 rgba(0, 0, 0, .5);
-}
-
-.imagen-port > img{
     width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
+    min-height: 100vh;
+    background-color: #4158D0;
+    background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
 }
 
-.hover-galeria{
+.card {
+    position: relative;
+    width: 300px;
+    height: 400px;
+    margin: 20px;
+}
+
+.card {
+
+    .face {
     position: absolute;
     width: 100%;
     height: 100%;
-    top: 0;
-    transform: scale(0);
-    background: hsla(273,91%,27%, 0.7);
-    transition: transform .5s;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: 1s;
+    }
+
+    .front {
+        transform: perspective(600px) rotateY(0deg);
+        box-shadow: 0 5px 10px #000;
+    
+
+        img {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            }
+
+        h3 {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            height: 45px;
+            line-height: 45px;
+            color: #fff;
+            background: rgba(0,0,0,.4);
+            text-align: center;
+            }
+       }
+
+
+       .back {
+        transform: perspective(600px) rotateY(180deg);
+        background: rgba(8, 192, 212, 0.767);
+        padding: 15px;
+        color: #f3f3f3;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        text-align: center;
+        box-shadow: 0 5px 10px #000;
+
+        .link {
+            border-top: solid 1px #f3f3f3;
+            height: 50px;
+            line-height: 50px;
+
+            a {
+                color: #f3f3f3;
+            }
+        }
+
+        h3 {
+            font-size: 30px;
+            margin-top: 20px;
+            letter-spacing: 2px;
+        }
+        p {
+            letter-spacing: 1px;
+            padding-bottom: 5px;
+        } 
+    }
+
 }
 
-.hover-galeria img{
-    width: 50px;
+.card:hover .front {
+    transform: perspective(600px) rotateY(180deg);
 }
 
-.hover-galeria p{
-    color: #fff;
-}
-
-.imagen-port:hover .hover-galeria{
-    transform: scale(1);
+.card:hover .back {
+    transform: perspective(600px) rotateY(360deg);
 }
